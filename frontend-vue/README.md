@@ -1,4 +1,4 @@
-# vue-typescript-crud
+# frontend-vue
 
 ## Project setup
 ```

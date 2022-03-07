@@ -23,17 +23,17 @@ export default class HelloWorld extends Vue {
   difficulty = 1
 
   mounted() {
-    document.querySelector('#button')!.addEventListener('click', this.clicks)
-    document.querySelector('#dmgUp')!.addEventListener('click', this.shop)
+    document.querySelector('#button').addEventListener('click', this.clicks)
+    document.querySelector('#dmgUp').addEventListener('click', this.shop)
   }
 
   dmg = 1
 
   updateDisplay(){
-    document.querySelector<any>('#dmg')!.innerText = this.dmg
-    document.querySelector<any>('#level')!.innerText = this.difficulty
-    document.querySelector<any>('#currentHp')!.innerText = this.currentHp
-    document.querySelector<any>('#numClicks')!.innerText = this.totalScore
+    document.querySelector('#dmg').innerHTML = this.dmg.toString()
+    document.querySelector('#level').innerHTML = this.difficulty.toString()
+    document.querySelector('#currentHp').innerHTML = this.currentHp.toString()
+    document.querySelector('#numClicks').innerHTML = this.totalScore.toString()
   }
 
   clicks() {
